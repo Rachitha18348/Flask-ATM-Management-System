@@ -1,0 +1,82 @@
+
+{% extends "base.html" %}
+
+{% block title %}View Transactions{% endblock %}
+
+{% block css %}
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/viewtransactions.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="transactions-container">
+
+    <div class="transactions-card">
+
+        <div class="transactions-header">
+
+            <div class="transactions-icon">↔</div>
+
+            <h1>Transaction History</h1>
+
+            <p>View your recent account transactions</p>
+
+        </div>
+
+        {% if history %}
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Transaction</th>
+                        <th>Date & Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    {% for transaction in history %}
+
+                    <tr>
+                        <td>{{ loop.index }}</td>
+
+                        <td>
+                            {{ transaction["description"] }}
+                        </td>
+
+                        <td>
+                            {{ transaction["time"] }}
+                        </td>
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        {% else %}
+
+        <div class="no-transactions">
+            <p>No transactions yet.</p>
+        </div>
+
+        {% endif %}
+
+        <a href="/dashboard" class="dashboard-button">
+            Back to Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

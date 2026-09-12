@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Change PIN{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+
+    <div class="card shadow-sm mx-auto" style="max-width: 450px;">
+
+        <div class="card-header bg-dark text-white text-center py-4">
+
+            <div class="fs-1">
+                🔒
+            </div>
+
+            <h2>Change PIN</h2>
+
+            <p class="mb-0">
+                Verify your email to continue
+            </p>
+
+        </div>
+
+
+        <div class="card-body p-4">
+
+            <form method="POST">
+
+                <label for="email" class="form-label">
+                    Enter Registered Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control mb-3"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit" class="btn btn-dark w-100">
+                    Send OTP
+                </button>
+
+            </form>
+
+
+            {% if info %}
+
+                <div class="alert alert-secondary mt-3 text-center">
+                    {{ info }}
+                </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

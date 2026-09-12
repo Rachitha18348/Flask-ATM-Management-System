@@ -1,0 +1,123 @@
+
+{% extends "base.html" %}
+
+{% block title %}Create Account{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/register.css') }}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="register-container">
+
+    <div class="register-card">
+
+        <!-- Header -->
+
+        <div class="register-icon">
+            👤
+        </div>
+
+        <h1>Create Account</h1>
+
+        <p class="subtitle">
+            Register to create your ATM account
+        </p>
+
+
+        <!-- Registration Form -->
+
+        <form method="post">
+
+            <label for="name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="pin">
+                Create PIN
+            </label>
+
+            <input
+                type="password"
+                id="pin"
+                name="pin"
+                placeholder="Enter a 4-digit PIN"
+                maxlength="4"
+                inputmode="numeric"
+                required
+            >
+
+
+            <label for="cpin">
+                Confirm PIN
+            </label>
+
+            <input
+                type="password"
+                id="cpin"
+                name="cpin"
+                placeholder="Re-enter your PIN"
+                maxlength="4"
+                inputmode="numeric"
+                required
+            >
+
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+
+        <!-- Login -->
+
+        <p class="login-text">
+            Already have an account?
+            <a href="/login">Login</a>
+        </p>
+
+
+        <!-- Message -->
+
+        {% if info %}
+
+            <div class="message">
+                {{ info }}
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}
+

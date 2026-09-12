@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+
+{% block title %}Check Balance{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/checkbalance.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="balance-container">
+
+    <div class="balance-card">
+
+        <div class="balance-icon">₹</div>
+
+        <h1>Account Balance</h1>
+
+        <p class="greeting">
+            Hello, {{ session["name"] }}!
+        </p>
+
+        <div class="balance-box">
+
+            <p>Available Balance</p>
+
+            <h2>₹{{ balance }}/-</h2>
+
+        </div>
+
+        <a href="/dashboard" class="dashboard-button">
+            Back to Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

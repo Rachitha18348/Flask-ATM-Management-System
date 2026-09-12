@@ -1,0 +1,114 @@
+
+.balance-container {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+.balance-card {
+    width: 430px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.balance-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #222;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.balance-card h1 {
+    margin: 0;
+
+    font-size: 28px;
+
+    color: #222;
+}
+
+.greeting {
+    margin: 8px 0 30px;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+.balance-box {
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 10px;
+
+    border: 1px solid #e0e0e0;
+}
+
+.balance-box p {
+    margin: 0 0 10px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.balance-box h2 {
+    margin: 0;
+
+    font-size: 32px;
+
+    color: #222;
+}
+
+.dashboard-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #222;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.dashboard-button:hover {
+    background-color: #444;
+}
+

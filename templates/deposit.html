@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+
+{% block title %}Deposit{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="../static/css/deposit.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="deposit-container">
+
+<div class="deposit-card">
+
+    <div class="deposit-icon">₹</div>
+
+    <h1>Deposit Money</h1>
+    <p class="subtitle">Add money to your account</p>
+
+    <form method="POST">
+
+        <label for="amount">Enter Amount</label>
+
+        <div class="amount-input">
+            <span>₹</span>
+            <input type="number" id="amount" name="amount"
+                   placeholder="Enter amount" min="1" required>
+        </div>
+
+        <input type="submit" value="Deposit Money" class="deposit-button">
+
+    </form>
+
+    {% if info %}
+        <p class="message">{{ info }}</p>
+    {% endif %}
+
+</div>
+
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

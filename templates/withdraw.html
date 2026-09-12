@@ -1,0 +1,57 @@
+
+{% extends "base.html" %}
+
+{% block title %}Withdraw{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/withdraw.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="withdraw-container">
+
+    <div class="withdraw-card">
+
+        <div class="withdraw-icon">₹</div>
+
+        <h1>Withdraw Money</h1>
+
+        <p class="subtitle">
+            Withdraw money from your account
+        </p>
+
+        <form method="POST">
+
+            <label for="amount">Enter Amount</label>
+
+            <div class="amount-box">
+                <span>₹</span>
+                <input
+                    type="number"
+                    id="amount"
+                    name="amount"
+                    placeholder="Enter amount"
+                    min="1"
+                    required
+                >
+            </div>
+
+            <button type="submit">
+                Withdraw Money
+            </button>
+
+        </form>
+
+        {% if info %}
+            <div class="message">
+                {{ info }}
+            </div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}
+

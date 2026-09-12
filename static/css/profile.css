@@ -1,0 +1,86 @@
+
+.profile-container {
+    width: 650px;
+    max-width: 90%;
+    margin: 45px auto;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Header */
+
+.profile-header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.profile-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    color: #222;
+
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.profile-header p {
+    margin: 7px 0 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Profile Information */
+
+.profile-details {
+    padding: 10px 30px 20px;
+}
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 5px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.profile-row:last-child {
+    border-bottom: none;
+}
+
+.profile-label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.profile-value {
+    max-width: 60%;
+    text-align: right;
+
+    font-size: 15px;
+    color: #222;
+    word-break: break-word;
+}
+.history-section { margin-top: 25px; padding-top: 25px; border-top: 1px solid #ddd; } .history-section h2 { margin: 0 0 18px; font-size: 20px; color: #222; } .history-list { border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden; } .history-row { display: flex; align-items: center; gap: 15px; padding: 13px 15px; border-bottom: 1px solid #eee; } .history-row:last-child { border-bottom: none; } .history-number { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; background-color: #222; color: white; border-radius: 50%; font-size: 13px; } .history-text { color: #444; font-size: 14px; } .no-history { padding: 15px; margin: 0; text-align: center; color: #777; background-color: #f7f7f7; border-radius: 8px; }

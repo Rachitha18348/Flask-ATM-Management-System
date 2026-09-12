@@ -1,0 +1,191 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+}
+
+
+/* Navbar */
+
+nav {
+    background-color: #222;
+
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Left side of navbar */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* Right side of navbar */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Navbar links */
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Logged-in username */
+
+.username {
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* Logout button */
+
+.logout {
+    background-color: #444;
+
+    padding: 8px 15px;
+
+    border-radius: 6px;
+}
+
+.logout:hover {
+    background-color: #555;
+
+    text-decoration: none;
+}
+
+
+/* General paragraph */
+
+body > p {
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Headings */
+
+h1 {
+    text-align: center;
+}
+
+
+/* Forms */
+
+form {
+    width: 350px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 8px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+/* Inputs */
+
+input {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Buttons */
+
+input[type="submit"],
+button {
+    background-color: #222;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #444;
+}
+
+
+/* Tables */
+
+table {
+    margin: 20px auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+th,
+td {
+    padding: 10px 20px;
+
+    border: 1px solid #333;
+}
+
+
+/* Links */
+
+a {
+    color: #0066cc;
+}
+

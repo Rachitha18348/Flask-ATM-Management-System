@@ -1,0 +1,89 @@
+
+{% extends "base.html" %}
+
+{% block title %}Reset PIN{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/resetpin.css') }}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="reset-container">
+
+    <div class="reset-card">
+
+        <!-- Header -->
+
+        <div class="reset-icon">
+            🔒
+        </div>
+
+        <h1>Reset PIN</h1>
+
+        <p class="subtitle">
+            Create a new PIN for your ATM account
+        </p>
+
+
+        <!-- Reset PIN Form -->
+
+        <form method="post">
+
+            <label for="npin">
+                New PIN
+            </label>
+
+            <input
+                type="password"
+                id="npin"
+                name="npin"
+                placeholder="Enter your new PIN"
+                maxlength="4"
+                inputmode="numeric"
+                required
+            >
+
+
+            <label for="cpin">
+                Confirm PIN
+            </label>
+
+            <input
+                type="password"
+                id="cpin"
+                name="cpin"
+                placeholder="Re-enter your new PIN"
+                maxlength="4"
+                inputmode="numeric"
+                required
+            >
+
+
+            <button type="submit">
+                Reset PIN
+            </button>
+
+        </form>
+
+
+        <!-- Message -->
+
+        {% if info %}
+
+            <div class="message">
+                {{ info }}
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}
+

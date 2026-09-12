@@ -1,0 +1,101 @@
+
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/login.css') }}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <!-- Login Header -->
+
+        <div class="login-icon">
+            🔐
+        </div>
+
+        <h1>Welcome Back</h1>
+
+        <p class="subtitle">
+            Login to access your ATM account
+        </p>
+
+
+        <!-- Login Form -->
+
+        <form method="post">
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="pin">
+                PIN
+            </label>
+
+            <input
+                type="password"
+                id="pin"
+                name="pin"
+                placeholder="Enter your PIN"
+                required
+            >
+
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+
+        <!-- Forgot PIN -->
+
+        <p class="forgot">
+            Forgot your PIN?
+            <a href="/forgotpin">Reset PIN</a>
+        </p>
+
+
+        <!-- Register -->
+
+        <p class="register">
+            New user?
+            <a href="/register">Create an account</a>
+        </p>
+
+
+        <!-- Message -->
+
+        {% if info %}
+
+            <div class="message">
+                {{ info }}
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}
+

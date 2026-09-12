@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="../static/css/dashboard.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard">
+
+
+<div class="dashboard-header">
+    <h1>ATM Dashboard</h1>
+    <p>Welcome! Choose an option below to continue.</p>
+</div>
+
+<div class="dashboard-links">
+
+    <a href="/checkbalance" class="dashboard-card">
+        <div class="card-icon">₹</div>
+        <div>
+            <h3>Check Balance</h3>
+            <p>View your current account balance</p>
+        </div>
+    </a>
+
+    <a href="/deposit" class="dashboard-card">
+        <div class="card-icon">+</div>
+        <div>
+            <h3>Deposit</h3>
+            <p>Deposit money into your account</p>
+        </div>
+    </a>
+
+    <a href="/withdraw" class="dashboard-card">
+        <div class="card-icon">−</div>
+        <div>
+            <h3>Withdraw</h3>
+            <p>Withdraw money from your account</p>
+        </div>
+    </a>
+
+    <a href="/viewtransactions" class="dashboard-card">
+        <div class="card-icon">↔</div>
+        <div>
+            <h3>Transactions</h3>
+            <p>View your transaction history</p>
+        </div>
+    </a>
+
+</div>
+
+
+</div>
+
+{% endblock %}

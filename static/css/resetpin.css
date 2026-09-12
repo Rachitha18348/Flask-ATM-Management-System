@@ -1,0 +1,143 @@
+
+.reset-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.reset-card {
+    width: 430px;
+    max-width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Icon */
+
+.reset-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #222;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+
+/* Heading */
+
+.reset-card h1 {
+    text-align: center;
+    margin: 0;
+
+    font-size: 28px;
+    color: #222;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    text-align: center;
+    margin: 8px 0 30px;
+
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Form */
+
+.reset-card form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+}
+
+
+/* Labels */
+
+.reset-card label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #444;
+}
+
+
+/* Inputs */
+
+.reset-card input {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+    font-size: 15px;
+    outline: none;
+}
+
+.reset-card input:focus {
+    border-color: #222;
+}
+
+
+/* Button */
+
+.reset-card button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #222;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.reset-card button:hover {
+    background-color: #444;
+}
+
+
+/* Message */
+
+.message {
+    margin-top: 20px;
+    padding: 12px;
+
+    background-color: #f3f3f3;
+    border-radius: 7px;
+
+    text-align: center;
+
+    color: #444;
+    font-size: 14px;
+}
+

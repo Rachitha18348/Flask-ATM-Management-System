@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+
+    <div class="card shadow-sm mx-auto" style="max-width: 700px;">
+
+        <!-- Profile Header -->
+
+        <div class="card-header bg-dark text-white text-center py-4">
+
+            <div class="mb-2">
+                <span class="fs-1">👤</span>
+            </div>
+
+            <h2 class="mb-1">My Profile</h2>
+
+            <p class="mb-0 text-light">
+                Account Information
+            </p>
+
+        </div>
+
+
+        <!-- Account Details -->
+
+        <div class="card-body p-4">
+
+            <h5 class="mb-3">Account Details</h5>
+
+            <div class="list-group mb-4">
+
+                {% for i in user %}
+
+                {% if i != 'history' and i != 'pin' and i != 'balance' %}
+
+                <div class="list-group-item d-flex justify-content-between align-items-center">
+
+                    <span class="fw-semibold text-secondary text-capitalize">
+                        {{ i }}
+                    </span>
+
+                    <span class="text-dark">
+                        {{ user[i] }}
+                    </span>
+
+                </div>
+
+                {% endif %}
+
+                {% endfor %}
+
+
+                <!-- Account Type -->
+
+                <div class="list-group-item d-flex justify-content-between align-items-center">
+
+                    <span class="fw-semibold text-secondary">
+                        Account Type
+                    </span>
+
+                    <span class="text-dark">
+                        Savings Account
+                    </span>
+
+                </div>
+
+
+                <!-- Account Status -->
+
+                <div class="list-group-item d-flex justify-content-between align-items-center">
+
+                    <span class="fw-semibold text-secondary">
+                        Account Status
+                    </span>
+
+                    <span class="text-success fw-semibold">
+                        Active
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+
+            <h5 class="mb-3">Quick Actions</h5>
+
+
+            <div class="d-flex gap-2 flex-wrap">
+
+                <a href="/deposit" class="btn btn-dark">
+                    Deposit
+                </a>
+
+                <a href="/withdraw" class="btn btn-dark">
+                    Withdraw
+                </a>
+
+                <a href="/checkbalance" class="btn btn-outline-dark">
+                    Check Balance
+                </a>
+
+                <a href="/changepin" class="btn btn-outline-dark">
+                    🔒 Change PIN
+                </a>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+{% endblock %}
