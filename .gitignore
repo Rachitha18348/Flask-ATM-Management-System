@@ -1,2 +1,6 @@
 
-/venu
+venv/
+venu/
+__pycache__/
+*.pyc
+.env
